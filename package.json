@@ -1,0 +1,41 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "Todo app with graphql",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kishor Bhandari",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-compression": "^1.0.2",
+    "express-rate-limit": "^6.9.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.1",
+    "mailgen": "^2.0.27",
+    "mongoose": "^7.4.3",
+    "mongoose-aggregate-paginate-v2": "^1.0.6",
+    "multer": "1.4.5-lts.1",
+    "nodemailer": "^6.9.4",
+    "passport": "^0.6.0",
+    "passport-auth0": "^1.4.3",
+    "passport-google-oauth20": "^2.0.0",
+    "swagger-ui-express": "^5.0.0",
+    "yaml": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.1"
+  }
+}
