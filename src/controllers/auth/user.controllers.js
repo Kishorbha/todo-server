@@ -458,7 +458,7 @@ const handleSocialLogin = asyncHandler(async (req, res) => {
     .cookie('refreshToken', refreshToken, options) // set the refresh token in the cookie
     .redirect(
       // redirect user to the frontend with access and refresh token in case user is not using cookies
-      `${process.env.CLIENT_SSO_REDIRECT_URL}?accessToken=${accessToken}&refreshToken=${refreshToken}`
+      `${process.env.CLIENT_SSO_REDIRECT_URL}/profile?accessToken=${accessToken}&refreshToken=${refreshToken}`
     )
 })
 

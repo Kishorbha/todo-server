@@ -93,12 +93,20 @@ router
     }
   )
 
-router
-  .route('/google/callback')
-  .get(passport.authenticate('google'), handleSocialLogin)
+router.route('/google/callback').get(
+  passport.authenticate('google', {
+    failureRedirect: `${process.env.CLIENT_SSO_REDIRECT_URL}/400`,
+  }),
+  handleSocialLogin
+)
 
 router
   .route('/auth0/callback')
-  .get(passport.authenticate('auth0'), handleSocialLogin)
+  .get(
+    passport.authenticate('auth0', {
+      failureRedirect: `${process.env.CLIENT_SSO_REDIRECT_URL}/400`,
+    }),
+    handleSocialLogin
+  )
 
 export default router
