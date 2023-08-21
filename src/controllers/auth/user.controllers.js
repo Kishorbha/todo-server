@@ -148,7 +148,7 @@ const loginUser = asyncHandler(async (req, res) => {
   // TODO: Add more options to make cookie more secure and reliable
   const options = {
     httpOnly: true,
-    // secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === 'production',
   }
 
   return res

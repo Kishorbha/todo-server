@@ -1,7 +1,7 @@
 {
   "name": "todo-backend",
   "version": "1.0.0",
-  "description": "Todo app with graphql",
+  "description": "Todo app ",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

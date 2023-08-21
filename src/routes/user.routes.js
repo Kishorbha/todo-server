@@ -88,6 +88,7 @@ router
   .get(
     passport.authenticate('auth0', { scope: ['openid', 'email', 'profile'] }),
     (req, res) => {
+      res.setHeader('Content-Type', 'text/html')
       res.send('redirecting to auth0...')
     }
   )

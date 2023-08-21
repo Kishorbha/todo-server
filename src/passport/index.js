@@ -62,7 +62,7 @@ try {
             email: profile._json.email,
             // There is a check for traditional logic so the password does not matter in this login method
             password: profile._json.sub, // Set user's password as sub (coming from the google)
-            username: profile._json.email?.split('@')[0], // as email is unique, this username will be unique
+            fullname: profile._json.email?.split('@')[0], // as email is unique, this username will be unique
             isEmailVerified: true, // email will be already verified
             role: UserRolesEnum.USER,
             avatar: {
@@ -119,7 +119,7 @@ try {
             email: emails[0].value,
             // There is a check for traditional logic so the password does not matter in this login method
             password: id, // Set user's password as sub (coming from the google)
-            username: name.givenName, // as email is unique, this username will be unique
+            fullname: name.givenName, // as email is unique, this username will be unique
             isEmailVerified: true, // email will be already verified
             role: UserRolesEnum.USER,
             avatar: {

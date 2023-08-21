@@ -187,7 +187,7 @@ paths:
                       updatedAt:
                         type: string
                         example: '2023-06-30T06:44:29.831Z'
-                      username:
+                      fullname:
                         type: string
                         example: doejohn
                   message:
@@ -215,7 +215,7 @@ paths:
                       loginType: EMAIL_PASSWORD
                       role: ADMIN
                       updatedAt: '2023-06-30T06:44:29.831Z'
-                      username: doejohn
+                      fullname: doejohn
                     message: Current user fetched successfully
                     statusCode: 200
                     success: true
@@ -1439,7 +1439,7 @@ paths:
                       updatedAt:
                         type: string
                         example: '2023-06-30T06:45:46.055Z'
-                      username:
+                      fullname:
                         type: string
                         example: doejohn
                   message:
@@ -1475,7 +1475,7 @@ paths:
                         eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDllNzk1MjY0ZTdkYmEyOWI3MjY5MzYiLCJpYXQiOjE2ODgxMDc1MjAsImV4cCI6MTY4ODk3MTUyMH0.Y9w5ZbXs8S8n2kuTLBHA5co8ez4KvebyJS2_o-9mxKU
                       role: ADMIN
                       updatedAt: '2023-06-30T06:45:46.055Z'
-                      username: doejohn
+                      fullname: doejohn
                     message: Avatar updated successfully
                     statusCode: 200
                     success: true
