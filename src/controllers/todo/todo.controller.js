@@ -15,8 +15,11 @@ const getAllTodos = asyncHandler(async (req, res) => {
                 $regex: query.trim(),
                 $options: 'i',
               },
+              owner: req.user._id,
             }
-          : {},
+          : {
+              owner: req.user._id,
+            },
     },
     {
       $match: complete
